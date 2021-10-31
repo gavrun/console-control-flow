@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console-control-flow", "console-control-flow.csproj", "{A6B7E74D-77F1-4788-AB5F-443F63227EA2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "folder1", "folder1", "{6E088207-05BD-43BC-A9A6-EB64B25DCD78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "console-control-flow", "console-control-flow.csproj", "{A6B7E74D-77F1-4788-AB5F-443F63227EA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

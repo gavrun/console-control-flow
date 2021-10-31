@@ -15,12 +15,6 @@ namespace console_control_flow.Tasks
             do
             {
                 //message
-                Console.WriteLine("Input a task to run (rewards, comments, tasks) or exit (quit):");
-
-                //input actions
-                var selectedTask = Console.ReadLine();
-
-                //message
                 Console.WriteLine("Input a data set (set1, set2):");
 
                 //input data set
@@ -28,6 +22,13 @@ namespace console_control_flow.Tasks
 
                 //show results
                 var surveyResults = SurveyData.GetDataByFileName(selectedDataSet); //TBD refactoring, extract to a new class
+
+                //message
+                Console.WriteLine("Input a task to run (rewards, comments, tasks) or exit (quit):");
+
+                //input actions
+                var selectedTask = Console.ReadLine();
+
 
                 switch (selectedTask)
                 {

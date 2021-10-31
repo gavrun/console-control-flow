@@ -16,9 +16,7 @@ namespace console_control_flow.Tasks
             //accept set1 set2
             //put to File.ReadAllText($"StaticData/{fileName}.json")
             return JsonConvert.DeserializeObject<Results>
-                (File.ReadAllText(
-                    $"StaticData/{fileName}.json"
-                    )
+                (File.ReadAllText($"StaticData/{fileName}.json")
                 );
         }
     }
