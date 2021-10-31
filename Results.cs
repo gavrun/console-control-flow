@@ -10,7 +10,6 @@ namespace console_control_flow.Tasks
     public class Results
     {
         //ratings
-
         public double ServiceScore { get; set; }
         public double CoffeeScore { get; set; }
         public double PriceScore { get; set; }
@@ -21,13 +20,11 @@ namespace console_control_flow.Tasks
         public string AreaToImprove { get; set; }
 
         //couts
-
         public double NumberSurveyed { get; set; }
         public double NumberResponded { get; set; }
         public double NumberRewardsMembers { get; set; }
 
         //responces
-
         public List<Responses> ResponsesData { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,7 @@ namespace console_control_flow.Tasks
             }
 
             //out the results to a file
+            File.WriteAllLines("CommentsReport.csv", comments);
         }
     }
 }

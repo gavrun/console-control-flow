@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,14 +41,14 @@ namespace console_control_flow.Tasks
 
             //switch condition
             tasks.Add(results.AreaToImprove switch
-            {
-                //case options by lambda expression
-                "RewardsProgram" => "Revisit the rewards deals.",
-                "Cleanliness" => "Contact the cleaning vendor",
-                "MobileApp" => "Contact the consulting firm about the app.",
-                //default 
-                _ => "Investigate individual comments for ideas."
-            }
+                {
+                    //case options by lambda expression
+                    "RewardsProgram" => "Revisit the rewards deals.",
+                    "Cleanliness" => "Contact the cleaning vendor",
+                    "MobileApp" => "Contact the consulting firm about the app.",
+                    //default 
+                    _ => "Investigate individual comments for ideas."
+                }
             );
 
             //tasks output
@@ -58,6 +59,7 @@ namespace console_control_flow.Tasks
             }
 
             //out the results to a file
+            File.WriteAllLines("TasksReport.csv", tasks);
         }
     }
 }

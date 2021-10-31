@@ -9,14 +9,17 @@ using Newtonsoft.Json;
 
 namespace console_control_flow.Tasks
 {
-    class SurveyData //what type of class ?
+    class SurveyData //what type of class this should be?
     {
         public static Results GetDataByFileName(string fileName)
         {
-            return JsonConvert.DeserializeObject<Results>(File.ReadAllText($"StaticData/{fileName}.json"));
+            //accept set1 set2
+            //put to File.ReadAllText($"StaticData/{fileName}.json")
+            return JsonConvert.DeserializeObject<Results>
+                (File.ReadAllText(
+                    $"StaticData/{fileName}.json"
+                    )
+                );
         }
-
-        //accept set1 set2
-        //put here File.ReadAllText($"StaticData/{fileName}.json")
     }
 }
