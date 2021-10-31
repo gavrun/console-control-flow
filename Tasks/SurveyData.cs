@@ -14,7 +14,6 @@ namespace console_control_flow.Tasks
         public static Results GetDataByFileName(string fileName)
         {
             return JsonConvert.DeserializeObject<Results>(File.ReadAllText($"StaticData/{fileName}.json"));
-
         }
 
         //accept set1 set2
