@@ -1,6 +1,9 @@
 ﻿using System;
+//add package
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 
-namespace console_control_flow
+namespace console_control_flow.Tasks
 {
     class Program
     {
@@ -24,7 +27,7 @@ namespace console_control_flow
                 var selectedDataSet = Console.ReadLine();
 
                 //show results
-                var surveyResults = ; //TBD in a new class
+                var surveyResults = SurveyData.GetDataByFileName(selectedDataSet); //TBD in a new class
 
                 switch (selectedTask)
                 {
@@ -39,9 +42,11 @@ namespace console_control_flow
                         break;
                     case "quit":
                         //quit action
+                        quitProgram = true;
                         break;
                     default:
-                        //daction
+                        //default action
+                        Console.WriteLine("This is not a valid input. Try again.");
                         break;
                 }
 

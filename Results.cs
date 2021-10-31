@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace console_control_flow
+
+namespace console_control_flow.Tasks
 {
     class Results
     {
@@ -27,6 +28,6 @@ namespace console_control_flow
 
         //responces
 
-        public List<SurveyResponse> Responses { get; set; }
+        //public List<SurveyResponse> Responses { get; set; }
     }
 }
