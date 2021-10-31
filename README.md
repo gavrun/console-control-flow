@@ -1,4 +1,4 @@
 # console-control-flow
 
-Newtonsoft Json https://www.nuget.org/packages/newtonsoft.json/
+additionally using Newtonsoft Json to serialize and deserialize objects https://www.nuget.org/packages/newtonsoft.json/
 
