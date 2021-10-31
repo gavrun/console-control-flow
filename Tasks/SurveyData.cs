@@ -11,12 +11,12 @@ namespace console_control_flow.Tasks
 {
     class SurveyData //what type of class this should be?
     {
-        public static Results GetDataByFileName(string fileName)
+        public static SurveyResults GetDataByFileName(string fileName)
         {
             //accept set1 set2
             //put to File.ReadAllText($"StaticData/{fileName}.json")
-            return JsonConvert.DeserializeObject<Results>
-                (File.ReadAllText($"StaticData/{fileName}.json")
+            return JsonConvert.DeserializeObject<SurveyResults>
+                (File.ReadAllText($"SurveyData/{fileName}.json")
                 );
         }
     }

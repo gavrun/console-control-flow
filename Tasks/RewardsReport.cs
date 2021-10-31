@@ -9,16 +9,18 @@ namespace console_control_flow.Tasks
 {
     public static class RewardsReport
     {
-        public static void GenerateWinnersEmailsReport(Results results)
+        public static void GenerateWinnersEmailsReport(SurveyResults results)
         {
             var selectedEmails = new List<string>();
 
             //counter outside the while loop
             int counter = 0;
 
-            while (selectedEmails.Count < 2 && counter < results.ResponsesData.Count)
+            Console.WriteLine(Environment.NewLine + "Selected Winners Output:");
+
+            while (selectedEmails.Count < 2 && counter < results.Responses.Count)
             {
-                var currentItem = results.ResponsesData[counter];
+                var currentItem = results.Responses[counter];
 
                 if (currentItem.FavoriteProduct == "Cappucino")
                 {

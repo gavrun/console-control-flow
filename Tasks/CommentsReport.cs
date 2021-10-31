@@ -9,7 +9,7 @@ namespace console_control_flow.Tasks
 {
     public static class CommentsReport
     {
-        public static void GenerateCommentsReport(Results results)
+        public static void GenerateCommentsReport(SurveyResults results)
         {
             var comments = new List<string>();
 
@@ -17,9 +17,9 @@ namespace console_control_flow.Tasks
             Console.WriteLine(Environment.NewLine + "Comments Output:");
 
             //for loop 
-            for (var i = 0; i < results.ResponsesData.Count; i++)
+            for (var i = 0; i < results.Responses.Count; i++)
             {
-                var currentItem = results.ResponsesData[i];
+                var currentItem = results.Responses[i];
 
                 if (currentItem.WouldRecommend < 7.0)
                 {
@@ -29,7 +29,7 @@ namespace console_control_flow.Tasks
             }
 
             //for each loop
-            foreach (var item in results.ResponsesData)
+            foreach (var item in results.Responses)
             {
                 if (item.AreaToImprove == results.AreaToImprove)
                 {

@@ -9,7 +9,7 @@ namespace console_control_flow.Tasks
 {
     public static class TasksReport
     {
-        public static void GenerateTasksReport(Results results)
+        public static void GenerateTasksReport(SurveyResults results)
         {
             var tasks = new List<string>();
 

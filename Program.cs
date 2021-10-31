@@ -2,8 +2,10 @@
 //add package
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+//add namespace
+using console_control_flow.Tasks;
 
-namespace console_control_flow.Tasks
+namespace console_control_flow
 {
     class Program
     {
@@ -18,10 +20,7 @@ namespace console_control_flow.Tasks
                 Console.WriteLine("Input a data set (set1, set2):");
 
                 //input data set
-                var selectedDataSet = Console.ReadLine();
-
-                //show results
-                var surveyResults = SurveyData.GetDataByFileName(selectedDataSet); //TBD refactoring, extract to a new class
+                var selectedSurveyDataSet = Console.ReadLine();
 
                 //message
                 Console.WriteLine("Input a task to run (rewards, comments, tasks) or exit (quit):");
@@ -29,6 +28,8 @@ namespace console_control_flow.Tasks
                 //input actions
                 var selectedTask = Console.ReadLine();
 
+                //show results
+                var surveyResults = SurveyData.GetDataByFileName(selectedSurveyDataSet); //TBD refactoring, extract to a new class
 
                 switch (selectedTask)
                 {
