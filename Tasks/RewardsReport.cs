@@ -12,7 +12,7 @@ namespace console_control_flow.Tasks
         {
             var selectedEmails = new List<string>();
 
-            //counter outside the loop
+            //counter outside the while loop
             int counter = 0;
 
             while (selectedEmails.Count < 2 && counter < results.ResponsesData.Count)

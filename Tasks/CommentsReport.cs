@@ -10,7 +10,34 @@ namespace console_control_flow.Tasks
     {
         public static void GenerateCommentsReport(Results results)
         {
+            var comments = new List<string>();
 
+            //comments output
+            Console.WriteLine(Environment.NewLine + "Comments Output:");
+
+            //for loop 
+            for (var i; i < results.ResponsesData.Count; i++)
+            {
+                var currentItem = results.ResponsesData[i];
+
+                if (currentItem.WouldRecommend < 7.0)
+                {
+                    Console.WriteLine(currentItem.Comments);
+                    comments.Add(currentItem.Comments);
+                }
+            }
+
+            //for each loop
+            foreach (var item in results.ResponsesData)
+            {
+                if (item.AreaToImprove == results.AreaToImprove)
+                {
+                    Console.WriteLine(item.Comments);
+                    comments.Add(item.Comments);
+                }
+            }
+
+            //out the results to a file
         }
     }
 }
