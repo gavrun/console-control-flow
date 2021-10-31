@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "console-control-flow", "console-control-flow.csproj", "{A6B7E74D-77F1-4788-AB5F-443F63227EA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "folder1", "folder1", "{6E088207-05BD-43BC-A9A6-EB64B25DCD78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6B7E74D-77F1-4788-AB5F-443F63227EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6B7E74D-77F1-4788-AB5F-443F63227EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6B7E74D-77F1-4788-AB5F-443F63227EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6B7E74D-77F1-4788-AB5F-443F63227EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77DAAB32-0BE9-4450-B745-DDB80070E1A8}
+	EndGlobalSection
+EndGlobal
