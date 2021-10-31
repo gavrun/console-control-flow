@@ -21,24 +21,27 @@ namespace console_control_flow.Tasks
                 var selectedTask = Console.ReadLine();
 
                 //message
-                Console.WriteLine("Input a data set (ds1, ds2):");
+                Console.WriteLine("Input a data set (set1, set2):");
 
                 //input data set
                 var selectedDataSet = Console.ReadLine();
 
                 //show results
-                var surveyResults = SurveyData.GetDataByFileName(selectedDataSet); //TBD in a new class
+                var surveyResults = SurveyData.GetDataByFileName(selectedDataSet); //TBD refactoring, extract to a new class
 
                 switch (selectedTask)
                 {
                     case "rewards":
                         //action 1
+                        RewardsReport.GenerateWinnersEmailsReport(surveyResults); //TBD its own class
                         break;
                     case "comments":
                         //action 2
+                        CommentsReport.GenerateCommentsReport(surveyResults);
                         break;
                     case "tasks":
                         //action3
+                        TasksReport.GenerateTasksReport(surveyResults);
                         break;
                     case "quit":
                         //quit action
