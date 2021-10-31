@@ -16,7 +16,7 @@ namespace console_control_flow.Tasks
             Console.WriteLine(Environment.NewLine + "Comments Output:");
 
             //for loop 
-            for (var i; i < results.ResponsesData.Count; i++)
+            for (var i = 0; i < results.ResponsesData.Count; i++)
             {
                 var currentItem = results.ResponsesData[i];
 
